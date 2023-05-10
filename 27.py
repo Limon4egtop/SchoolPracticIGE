@@ -84,7 +84,17 @@
 # else:
 #     print(ms-mr5, "8")
 
+# REGE https://inf-ege.sdamgia.ru/problem?id=29675
+f = open("inf_22_10_20_27b.txt")
+n = int(f.readline())
 
+m = [0]
+for s in f:
+    p = [int(x) for x in s.split()]
+    m = [a+b for a in p for b in m]
+    m = {x%3 : x for x in sorted(m)}.values()
+    # print(len(m))
+print(max(x for x in m if x%3 == 0))
 
 
 
