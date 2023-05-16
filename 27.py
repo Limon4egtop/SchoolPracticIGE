@@ -85,20 +85,33 @@
 #     print(ms-mr5, "8")
 
 # REGE https://inf-ege.sdamgia.ru/problem?id=29675
-f = open("inf_22_10_20_27b.txt")
-n = int(f.readline())
+# f = open("inf_22_10_20_27b.txt")
+# n = int(f.readline())
+#
+# m = [0]
+# for s in f:
+#     p = [int(x) for x in s.split()]
+#     m = [a+b for a in p for b in m]
+#     m = {x%3 : x for x in sorted(m)}.values()
+#     # print(len(m))
+# print(max(x for x in m if x%3 == 0))
 
-m = [0]
-for s in f:
-    p = [int(x) for x in s.split()]
-    m = [a+b for a in p for b in m]
-    m = {x%3 : x for x in sorted(m)}.values()
-    # print(len(m))
-print(max(x for x in m if x%3 == 0))
-
-
-
-
+# https://inf-ege.sdamgia.ru/problem?id=27990
+# f = open("27990_B.txt")
+# n = int(f.readline())
+#
+# m = [int(x) for x in f]
+# k62 = k31 = k2 = k = 0
+# for x in m:
+#     if x % 62 == 0:
+#         k62 += 1
+#     elif x % 31 == 0:
+#         k31 += 1
+#     elif x % 2 == 0:
+#         k2 += 1
+#     else:
+#         k += 1
+# print(k31*k2 + k62*(k31+k2+k) + k62*(k62-1)/2)
 
 
 
