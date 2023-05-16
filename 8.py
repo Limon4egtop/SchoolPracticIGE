@@ -453,9 +453,16 @@ for i in range(len(m)):
 #     if m[i] == "ИЗБА":
 #         print(i+1)
 
-
-
-
+# 8364
+# import itertools
+# m = ["".join(x) for x in itertools.product("КРАТЕР", repeat=6)]
+# c1 = c2 = 0
+# for i in range(len(m)):
+#     if m[i] == "КАРЕТА":
+#         c1 = i
+#     if m[i] == "РАКЕТА":
+#         c2 = i
+# print(c2-c1+1)
 
 
 

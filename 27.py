@@ -113,22 +113,21 @@
 #         k += 1
 # print(k31*k2 + k62*(k31+k2+k) + k62*(k62-1)/2)
 
-# 1977
-f = open("27A_1977.txt")
-n = int(f.readline())
+# 1977 -(решать через индексы и сохранять длинну)
+# f = open("27A_1977.txt")
+# n = int(f.readline())
+#
+# m = [int(x) for x in f]
+# k = [100000000]*43
+# s = mx = 0
+# for x in m:
+#     s += x
+#     if s % 43 == 0:
+#         mx = max(mx, s)
+#     mx = max(mx, s-k[s%43])
+#     k[s%43] = min(k[s%43], s)
+# print(mx, s)
 
-m = [int(x) for x in f]
-k = [100000000]*43
-s = mx = 0
-for x in m:
-    s += x
-    if s % 43 == 0:
-        mx = max(mx, s)
-    mx = max(mx, s-k[s%43])
-    k[s%43] = min(k[s%43], s)
-print(mx, s)
-
-print((114+95)%43)
 
 
 

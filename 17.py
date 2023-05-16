@@ -688,8 +688,18 @@ print(minn, counter)
 #         xMin = max(xMin, m[i] + m[i+1])
 # print(c, xMin)
 
-
-
+# 8373
+# m = [int(x) for x in open("17_8373.txt").readlines()]
+# c = 0
+# kratMinChet = minSumm = 1000000
+# for x in m:
+#     if x % 2 == 0:
+#         kratMinChet = min(x, kratMinChet)
+# for i in range(len(m)-2):
+#     if ((m[i]%2 == 0 and m[i+2]%2 != 0) or (m[i]%2 != 0 and m[i+2]%2 == 0)) and m[i+1] % kratMinChet == 0:
+#         c += 1
+#         minSumm = min(minSumm, m[i]+m[i+2])
+# print(c, minSumm)
 
 
 

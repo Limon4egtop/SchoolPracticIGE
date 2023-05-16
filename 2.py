@@ -366,15 +366,24 @@ for w in 0,1:
 #                 f2 = (x or (not(y))) == (z <= w)
 #                 print(x,y,w,z,int(f1), int(f2))
 
-print("x y w z")
-for z in 0,1:
-    for w in 0, 1:
-        for y in 0, 1:
-            for x in 0, 1:
-                f = (x or (not(y))) and (not(y == z)) and (not(w))
-                if f:
-                    print(x,y,w,z)
+# print("x y w z")
+# for z in 0,1:
+#     for w in 0, 1:
+#         for y in 0, 1:
+#             for x in 0, 1:
+#                 f = (x or (not(y))) and (not(y == z)) and (not(w))
+#                 if f:
+#                     print(x,y,w,z)
 
+# 8358
+# print("x y w z")
+# for z in 0,1:
+#     for w in 0, 1:
+#         for y in 0, 1:
+#             for x in 0, 1:
+#                 f = (x or y or z) <= (x and (y or w))
+#                 if f == 0 and x+y+w+z <= 2 and z == 0:
+#                     print(x,y,w,z)
 
 
 

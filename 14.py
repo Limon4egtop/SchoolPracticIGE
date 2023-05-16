@@ -336,8 +336,11 @@ for x in range(21):
 #     if z % 14 == 0:
 #         print(z//14, x)
 
-
-
+# 8370
+# for p in range(10):
+#     for q in range(10):
+#         if (2*p**2 + 3*p**1 + 4*p**0) == (3*q**2 + 4*q**1 + 5*q**0):
+#             print((2*p**2 + 3*p**1 + 4*p**0), (3*q**2 + 4*q**1 + 5*q**0), p, q)
 
 
 

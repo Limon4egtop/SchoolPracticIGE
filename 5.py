@@ -296,17 +296,28 @@ for i in range(1,100):
 #     if int(n,2) < 1855663:
 #         print(int(n,2))
 
-for i in range(1, 40):
+# for i in range(1, 40):
+#     n = bin(i)[2:]
+#     if i % 3 == 0:
+#         n += n[-3:]
+#     else:
+#         n += bin((i%3)*3)[2:]
+#     if int(n,2) >= 76:
+#         print(i)
+
+# 8361
+for i in range(1, 100):
     n = bin(i)[2:]
-    if i % 3 == 0:
-        n += n[-3:]
+    if sum(int(x) for x in n) % 2 != 0:
+        n += "1"
     else:
-        n += bin((i%3)*3)[2:]
-    if int(n,2) >= 76:
-        print(i)
-
-
-
+        n += "0"
+    if sum(int(x) for x in n) % 2 != 0:
+        n += "1"
+    else:
+        n += "0"
+    if int(n, 2) < 100:
+        print(i, int(n, 2))
 
 
 

@@ -351,6 +351,35 @@ print(s)
 #     if sum(int(x) for x in s) == 17:
 #         print(i)
 
+# 8368 -
+# for n in range(100000, 1000000000):
+#     s = "3" + "7"*n
+#     while "37" in s or "577" in s or "777" in s:
+#         if "37" in s:
+#             s = s.replace("37", "7", 1)
+#         if "577" in s:
+#             s = s.replace("577", "73", 1)
+#         if "777" in s:
+#             s = s.replace("777", "5", 1)
+#     summ = sum(int(x) for x in s)
+#     ksumm = kn = []
+#     for j in range(2, 101):
+#         f = 1
+#         if summ % j == 0:
+#             f = 0
+#         if n % j == 0 and f == 0:
+#             f = 0
+#             break
+#     if f == 1:
+#         print(n)
+
+
+
+
+
+
+
+
 
 
 
