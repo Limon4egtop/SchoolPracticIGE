@@ -128,6 +128,35 @@
 #     k[s%43] = min(k[s%43], s)
 # print(mx, s)
 
+# https://inf-ege.sdamgia.ru/problem?id=28129
+# import itertools
+# f = open("28129_A.txt")
+# n = f.readline()
+# # n = 4
+# m = [int(x) for x in f]
+# # m = [168, 7, 320, 328]
+# isk = [-1]*2
+# for x, y in itertools.combinations(m, r=2):
+#     if (x%160 != y%160) and (x%7 == 0 or y%7 == 0):
+#         if sum(isk) < x+y:
+#             isk[0] = x
+#             isk[1] = y
+# print(isk)
+
+# 7603
+# f = open("27A_7603.txt")
+# n = int(f.readline())
+# k = int(f.readline())
+# m = [int(x) for x in f]
+# # n = 5
+# # k = 3
+# # m = [10, 15,100,1,30]
+# lMax = maxSumm = 0
+# for i in range(len(m)-k):
+#     lMax = max(lMax, m[i])
+#     maxSumm = max(maxSumm, lMax+m[i+k])
+# print(maxSumm)
+
 
 
 
