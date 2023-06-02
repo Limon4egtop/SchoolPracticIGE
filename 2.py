@@ -385,8 +385,15 @@ for w in 0,1:
 #                 if f == 0 and x+y+w+z <= 2 and z == 0:
 #                     print(x,y,w,z)
 
-
-
+# 8489
+print("x y w z")
+for z in 0,1:
+    for w in 0, 1:
+        for y in 0, 1:
+            for x in 0, 1:
+                f = ((w <= y) <= (x == y)) or (not(z))
+                if f == 0:
+                    print(x,y,w,z)
 
 
 

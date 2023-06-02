@@ -179,8 +179,13 @@ print(f(3516)//f(3513))
 # if f(1065509) == 100000100001000100101:
 #     print(True)
 
-
-
+# 8520
+# def f(n):
+#     if n >= 2025:
+#         return n
+#     else:
+#         return n + 3 + f(n+3)
+# print(f(2018)-f(2022))
 
 
 

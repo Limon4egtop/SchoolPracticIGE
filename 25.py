@@ -141,19 +141,25 @@
 #         if i % 4891 == 0:
 #             print(i)
 
-import fnmatch
-for i in range(1200156, 10**8):
-    s = str(i)
-    if fnmatch.fnmatch(s, "12??1*56"):
-        if i % 317 == 0:
-            print(i, i//317)
+# import fnmatch
+# for i in range(1200156, 10**8):
+#     s = str(i)
+#     if fnmatch.fnmatch(s, "12??1*56"):
+#         if i % 317 == 0:
+#             print(i, i//317)
 # 1226156 3868
 # 12321156 38868
 # 12511356 39468
 # 12701556 40068
 # 12891756 40668
 
-
+# 8511
+# import fnmatch
+# for i in range(1200156, 10**8):
+#     s = str(i)
+#     if fnmatch.fnmatch(s, "12??15*6"):
+#         if i % 253 == 0:
+#             print(i, i//253)
 
 
 

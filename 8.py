@@ -464,7 +464,12 @@ for i in range(len(m)):
 #         c2 = i
 # print(c2-c1+1)
 
-
+# 8496
+# import itertools
+# m = ["".join(x) for x in itertools.product("АВОРТ", repeat=6)]
+# for i in range(len(m)):
+#     if m[i] == "ВОРОТА":
+#         print(i+1)
 
 
 

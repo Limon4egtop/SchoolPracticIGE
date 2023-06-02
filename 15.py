@@ -617,23 +617,33 @@ for A in range(1, 1000):
 #     if f == 1:
 #         print(a)
 
-for a in range(1, 1000):
-    f = 1
-    for x in range(1, 101):
-        for y in range(1, 102):
-            z = (11 <= y) or (7*y < x) or (a > x*y)
-            if z == 1:
-                f = 1
-            else:
-                f = 0
-                break
-        if f == 0:
-            break
-    if f == 1:
-        print(a)
+# for a in range(1, 1000):
+#     f = 1
+#     for x in range(1, 101):
+#         for y in range(1, 102):
+#             z = (11 <= y) or (7*y < x) or (a > x*y)
+#             if z == 1:
+#                 f = 1
+#             else:
+#                 f = 0
+#                 break
+#         if f == 0:
+#             break
+#     if f == 1:
+#         print(a)
 
-
-
+# 8503
+# for A in range(1, 100):
+#     f = 1
+#     for x in range(1, 200):
+#         z = ((x & 52 != 0) and (x&36 == 0)) <= (not(x&A == 0))
+#         if z == 1:
+#             f = 1
+#         else:
+#             f = 0
+#             break
+#     if f == 1:
+#         print(A)
 
 
 

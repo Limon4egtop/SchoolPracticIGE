@@ -701,6 +701,31 @@ print(minn, counter)
 #         minSumm = min(minSumm, m[i]+m[i+2])
 # print(c, minSumm)
 
+# 8504
+# with open("17_8504.txt") as f:
+#     m = [int(x) for x in f]
+#
+# minCrat = 100000000
+# maxSumm = -10000
+# c = 0
+# for x in m:
+#     if len(str(x)) == 3 and str(x)[-1] == "5":
+#         minCrat = min(minCrat, x)
+# for i in range(len(m)-1):
+#     if ((len(str(m[i])) == 3) or (len(str(m[i+1])) == 3)) and ((m[i] + m[i+1]) % minCrat == 0):
+#         c+=1
+#         maxSumm = max(maxSumm, (m[i] + m[i+1]))
+# print(c, maxSumm)
+
+
+
+
+
+
+
+
+
+
 
 
 

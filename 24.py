@@ -297,8 +297,9 @@ print(max(len(x) for x in s))
 # f = open("1_24.txt").read().replace("B", "A").replace("C", "A").replace("AA", "A A").split()
 # print(max(len(x) for x in f))
 
-
-
+# 8510
+# f = open("24_8510.txt").read().replace("O", "N").replace("P", "N").replace("NN", "N N").split()
+# print(max(len(x) for x in f))
 
 
 

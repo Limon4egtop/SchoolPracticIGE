@@ -554,6 +554,20 @@ for s in range(1, 125+1):
 #             if m == 2 or m == 4:
 #                 print(s, m)
 
+# 8506 1 куча +1 +4 *3 >= 55 1<=s<=54
+# def f(s,c,m):
+#     if s >= 55:
+#         return c%2 == m%2
+#     if m == c:
+#         return 0
+#     h = [f(s+1,c+1,m), f(s+4,c+1,m), f(s*3,c+1,m)]
+#     return any(h) if (c+1)%2 == m%2 else all(h)
+#
+# for s in range(1, 55):
+#     for m in range(1,5):
+#         if f(s,0,m):
+#             if m == 2 or m == 4:
+#                 print(s, m)
 
 
 

@@ -157,10 +157,20 @@
 #     maxSumm = max(maxSumm, lMax+m[i+k])
 # print(maxSumm)
 
-
-
-
-
+# 8513
+f = open("27_A_8513.txt")
+k = int(f.readline())       #кол-во минут
+n = int(f.readline())       #кол-во показаний
+m = [int(x) for x in f.readlines()]
+# k = 3
+# n = 5
+# m = [15, 10, 200, 0, 30]
+print(k,n,m)
+maxSumm = -100000
+for i in range(n):
+    for j in range(i+k, n):
+        maxSumm = max(maxSumm, m[i] + m[j])
+print(maxSumm)
 
 
 

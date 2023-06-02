@@ -31,30 +31,51 @@
 #             break
 # print(c, xMax)
 
-f = open("26_7602.txt")
-k = int(f.readline())        #кол-во ячеек
-n = int(f.readline())        #окл-во пассажиров
-# k, n = 2, 5
+# f = open("26_7602.txt")
+# k = int(f.readline())        #кол-во ячеек
+# n = int(f.readline())        #окл-во пассажиров
+# # k, n = 2, 5
+# m = []
+# for i in range(n):
+#     a, b = f.readline().split()
+#     m.append([int(a), int(b)])
+# # m = [[30, 60], [40, 1000], [59, 60], [61, 1000], [1010, 1440]]
+# box = [-1] * k
+# m.sort()
+# c = last = 0
+# for i in range(n):
+#     for j in range(k):
+#         if box[j] < m[i][0]:
+#             box[j] = m[i][1]
+#             c += 1
+#             last = j+1
+#             break
+# print(c, last)
+
+# 8512
+f = open("26_8512.txt")
+k = int(f.readline())        #ячейки
+n = int(f.readline())        #людей
 m = []
 for i in range(n):
-    a, b = f.readline().split()
-    m.append([int(a), int(b)])
-# m = [[30, 60], [40, 1000], [59, 60], [61, 1000], [1010, 1440]]
-box = [-1] * k
-m.sort()
-c = last = 0
+    dop = f.readline().split()
+    m.append([int(dop[0]), int(dop[1])])
+
+# k = 2
+# n = 5
+# m = [[30,60], [40, 1000], [59, 60], [61, 1000], [1010, 1440]]
+
+c = 0
+kLast = 0
+korob = [-1]*k
 for i in range(n):
     for j in range(k):
-        if box[j] < m[i][0]:
-            box[j] = m[i][1]
+        if korob[j] < m[i][0]:
+            korob[j] = m[i][1]
             c += 1
-            last = j+1
+            kLast = j
             break
-print(c, last)
-
-
-
-
+print(c, kLast+1)
 
 
 
