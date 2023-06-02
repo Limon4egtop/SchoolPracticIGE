@@ -68,6 +68,7 @@ for i in range(n):
 c = 0
 kLast = 0
 korob = [-1]*k
+m.sort()
 for i in range(n):
     for j in range(k):
         if korob[j] < m[i][0]:

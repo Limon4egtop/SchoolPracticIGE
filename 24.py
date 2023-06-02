@@ -298,8 +298,11 @@ print(max(len(x) for x in s))
 # print(max(len(x) for x in f))
 
 # 8510
-# f = open("24_8510.txt").read().replace("O", "N").replace("P", "N").replace("NN", "N N").split()
-# print(max(len(x) for x in f))
+f = open("24_8510.txt").read().replace("O", "N").replace("P", "N")
+while "NN" in f:
+    f = f.replace("NN", "N N")
+f = f.split()
+print(max(len(x) for x in f))
 
 
 
