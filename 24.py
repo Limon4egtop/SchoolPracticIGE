@@ -298,14 +298,18 @@ print(max(len(x) for x in s))
 # print(max(len(x) for x in f))
 
 # 8510
-f = open("24_8510.txt").read().replace("O", "N").replace("P", "N")
-while "NN" in f:
-    f = f.replace("NN", "N N")
+# f = open("24_8510.txt").read().replace("O", "N").replace("P", "N")
+# while "NN" in f:
+#     f = f.replace("NN", "N N")
+# f = f.split()
+# print(max(len(x) for x in f))
+
+# 8959
+f = open("24_8959.txt").read().replace("EA", "**").replace("NPC", "***")
+for x in "QWERTYUIOPASDFGHJKLZXCVBNM":
+    f = f.replace(x, " ")
 f = f.split()
-print(max(len(x) for x in f))
-
-
-
+print(max(len(y) for y in f))
 
 
 

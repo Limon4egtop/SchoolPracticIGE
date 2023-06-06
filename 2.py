@@ -386,14 +386,32 @@ for w in 0,1:
 #                     print(x,y,w,z)
 
 # 8489
-print("x y w z")
-for z in 0,1:
-    for w in 0, 1:
-        for y in 0, 1:
-            for x in 0, 1:
-                f = ((w <= y) <= (x == y)) or (not(z))
-                if f == 0:
-                    print(x,y,w,z)
+# print("x y w z")
+# for z in 0,1:
+#     for w in 0, 1:
+#         for y in 0, 1:
+#             for x in 0, 1:
+#                 f = ((w <= y) <= (x == y)) or (not(z))
+#                 if f == 0:
+#                     print(x,y,w,z)
+
+# 8938
+# print("x y w z")
+# for z in 0,1:
+#     for w in 0, 1:
+#         for y in 0, 1:
+#             for x in 0, 1:
+#                 f = ((x or y) == (y <= z)) or w
+#                 if f == 0:
+#                     print(x,y,w,z)
+
+
+
+
+
+
+
+
 
 
 

@@ -386,7 +386,18 @@ print(s)
 #     if s.count("3") == 2:
 #         print(n)
 
-
+# 8949
+# for i in range(4, 50):
+#     s = "2" + "5"*i
+#     while "25" in s or "35" in s or "555" in s:
+#         if "25" in s:
+#             s = s.replace("25", "53", 1)
+#         if "35" in s:
+#             s = s.replace("35", "2", 1)
+#         if "555" in s:
+#             s = s.replace("555", "23", 1)
+#     if sum(int(z) for z in s) % 7 == 0:
+#         print(i)
 
 
 

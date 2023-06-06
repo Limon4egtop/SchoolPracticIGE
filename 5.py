@@ -320,17 +320,28 @@ for i in range(1,100):
 #         print(i, int(n, 2))
 
 # 8493
-for i in range(1, 100):
+# for i in range(1, 100):
+#     n = bin(i)[2:]
+#     if i % 3 == 0:
+#         n += n[-3:]
+#     else:
+#         n += bin(i%3*3)[2:]
+#     if int(n,2) < 76:
+#         print(i)
+
+# 8942
+for i in range(1,500):
     n = bin(i)[2:]
-    if i % 3 == 0:
-        n += n[-3:]
+    if sum(int(x) for x in n) % 4 == 0:
+        n = "10" + n
     else:
-        n += bin(i%3*3)[2:]
-    if int(n,2) < 76:
+        n = "11" + n
+    if sum(int(x) for x in n) % 2 == 0:
+        n += "1"
+    else:
+        n += "0"
+    if int(n,2) < 250:
         print(i)
-
-
-
 
 
 

@@ -717,6 +717,49 @@ print(minn, counter)
 #         maxSumm = max(maxSumm, (m[i] + m[i+1]))
 # print(c, maxSumm)
 
+# 8954
+with open("17_8954.txt") as f:
+    m = [int(x) for x in f]
+
+maxCrat16 = -100000
+for x in m:
+    if hex(x)[-2:] == "0f":
+        maxCrat16 = max(maxCrat16, x)
+
+c = 0
+maxSumm = -10000
+for i in range(len(m)-1):
+    if (((m[i] % 7 == 0) and (m[i+1] % 7 != 0)) or ((m[i] % 7 != 0) and (m[i+1] % 7 == 0))) and \
+        ((m[i] + m[i+1]) % maxCrat16 == 0):
+        c+=1
+        maxSumm = max(maxSumm, m[i]+m[i+1])
+print(c, maxSumm)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -645,6 +645,38 @@ for A in range(1, 1000):
 #     if f == 1:
 #         print(A)
 
+# 8952
+# print(14&5 == 0)
+for a in range(1, 100000000000000):
+    f = 1
+    for x in range(1, 200):
+        z = (x&103 == 0) and (x&94 != 0) <= (x&a != 0)
+        if z == 1:
+            f = 1
+        else:
+            f = 0
+            break
+    if f == 1:
+        print(a)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

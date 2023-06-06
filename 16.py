@@ -188,6 +188,54 @@ print(f(3516)//f(3513))
 # print(f(2018)-f(2022))
 
 
+# 8953
+from sys import setrecursionlimit
+setrecursionlimit(10000)
+def f(n):
+    if n >=10000:
+        return 1
+    else:
+        if n % 2 == 0:
+            return f(n+3) + 7
+        else:
+            return f(n+1)-3
+print(f(50)-f(57))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
