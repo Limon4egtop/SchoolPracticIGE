@@ -620,6 +620,28 @@ print(f(1,600))
 #
 # print(f(40, 2))
 
+def f(n,k):
+    if n < k:
+        return 0
+    if n == k:
+        return 1
+    if n == 8:
+        return 0
+    if n > k:
+        return f(n-2,k) + f(n//2,k)
+
+print(f(70,22)*f(22,5))
+
+
+
+
+
+
+
+
+
+
+
 
 
 

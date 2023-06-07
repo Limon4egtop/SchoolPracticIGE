@@ -53,33 +53,41 @@
 # print(c, last)
 
 # 8512
-f = open("26_8512.txt")
-k = int(f.readline())        #ячейки
-n = int(f.readline())        #людей
-m = []
-for i in range(n):
-    dop = f.readline().split()
-    m.append([int(dop[0]), int(dop[1])])
+# f = open("26_8512.txt")
+# k = int(f.readline())        #ячейки
+# n = int(f.readline())        #людей
+# m = []
+# for i in range(n):
+#     dop = f.readline().split()
+#     m.append([int(dop[0]), int(dop[1])])
 
 # k = 2
 # n = 5
 # m = [[30,60], [40, 1000], [59, 60], [61, 1000], [1010, 1440]]
 
-c = 0
-kLast = 0
-korob = [-1]*k
+# c = 0
+# kLast = 0
+# korob = [-1]*k
+# m.sort()
+# for i in range(n):
+#     for j in range(k):
+#         if korob[j] < m[i][0]:
+#             korob[j] = m[i][1]
+#             c += 1
+#             kLast = j
+#             break
+# print(c, kLast+1)
+
+f = open("26.txt")
+k = int(f.readline())       #кол-во номеров
+n = int(f.readline())       #кол-во групп
+m = []
+for _ in range(n):
+    m.append(list(map(int, f.readline().split())))
+print(k, n, m[:100])
 m.sort()
-for i in range(n):
-    for j in range(k):
-        if korob[j] < m[i][0]:
-            korob[j] = m[i][1]
-            c += 1
-            kLast = j
-            break
-print(c, kLast+1)
-
-
-
+m.sort(key=m[0][2])
+print(k, n, m[:100])
 
 
 

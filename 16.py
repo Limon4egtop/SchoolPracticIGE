@@ -189,19 +189,26 @@ print(f(3516)//f(3513))
 
 
 # 8953
-from sys import setrecursionlimit
-setrecursionlimit(10000)
-def f(n):
-    if n >=10000:
-        return 1
-    else:
-        if n % 2 == 0:
-            return f(n+3) + 7
-        else:
-            return f(n+1)-3
-print(f(50)-f(57))
+# from sys import setrecursionlimit
+# setrecursionlimit(10000)
+# def f(n):
+#     if n >=10000:
+#         return 1
+#     else:
+#         if n % 2 == 0:
+#             return f(n+3) + 7
+#         else:
+#             return f(n+1)-3
+# print(f(50)-f(57))
 
-
+# from sys import setrecursionlimit
+# setrecursionlimit(10000)
+# def f(n):
+#     if n >= 2222:
+#         return 1
+#     else:
+#         return n**3 + f(n+2)
+# print(f(4)-f(10))
 
 
 

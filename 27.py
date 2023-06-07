@@ -158,21 +158,37 @@
 # print(maxSumm)
 
 # 8513
-f = open("27_A_8513.txt")
-k = int(f.readline())       #кол-во минут
-n = int(f.readline())       #кол-во показаний
+# f = open("27_A_8513.txt")
+# k = int(f.readline())       #кол-во минут
+# n = int(f.readline())       #кол-во показаний
+# m = [int(x) for x in f.readlines()]
+# # k = 3
+# # n = 5
+# # m = [15, 10, 200, 0, 30]
+# print(k,n,m)
+# maxSumm = -100000
+# for i in range(n):
+#     for j in range(i+k, n):
+#         maxSumm = max(maxSumm, m[i] + m[j])
+# print(maxSumm)
+
+f=open("27A.txt")
+n = int(f.readline())       #кол-во чисел
+k = int(f.readline())       #не более чем на
+r = int(f.readline())       #не менее чем на
 m = [int(x) for x in f.readlines()]
-# k = 3
-# n = 5
-# m = [15, 10, 200, 0, 30]
-print(k,n,m)
-maxSumm = -100000
+# n = 8
+# k = 5
+# r = 2
+# m = [22, 36, 71, 55, 141, 82, 94, 177]
+# print(n,k,r,m)
+ans = []
 for i in range(n):
-    for j in range(i+k, n):
-        maxSumm = max(maxSumm, m[i] + m[j])
-print(maxSumm)
-
-
+    for j in range(i, n):
+        if str(m[i]+m[j])[-2:] == "77":
+            if r <= abs(i-j) <= k:
+                ans.append([m[i], m[j]])
+print(len(ans), ans[:100])
 
 
 

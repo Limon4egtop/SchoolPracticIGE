@@ -472,13 +472,18 @@ for i in range(len(m)):
 #         print(i+1)
 
 # 8945
-import itertools
-m1 = ["".join(x) for x in itertools.product("369", "124578AB", "0369", "124578AB", "0369", "124578AB", "0369")]
-m2 = ["".join(x) for x in itertools.product("124578AB", "0369", "124578AB", "0369", "124578AB", "0369", "124578AB")]
-print(len(m1) + len(m2))
+# import itertools
+# m1 = ["".join(x) for x in itertools.product("369", "124578AB", "0369", "124578AB", "0369", "124578AB", "0369")]
+# m2 = ["".join(x) for x in itertools.product("124578AB", "0369", "124578AB", "0369", "124578AB", "0369", "124578AB")]
+# print(len(m1) + len(m2))
 
-
-
+# import itertools
+# m = ["".join(x) for x in itertools.product("АКЛМНЯ", repeat=5)]
+# c = 0
+# for x in m:
+#     if x[:2] == "МН":
+#         c += 1
+# print(c-2)
 
 
 

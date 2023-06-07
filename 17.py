@@ -718,27 +718,36 @@ print(minn, counter)
 # print(c, maxSumm)
 
 # 8954
-with open("17_8954.txt") as f:
-    m = [int(x) for x in f]
+# with open("17_8954.txt") as f:
+#     m = [int(x) for x in f]
+#
+# maxCrat16 = -100000
+# for x in m:
+#     if hex(x)[-2:] == "0f":
+#         maxCrat16 = max(maxCrat16, x)
+#
+# c = 0
+# maxSumm = -10000
+# for i in range(len(m)-1):
+#     if (((m[i] % 7 == 0) and (m[i+1] % 7 != 0)) or ((m[i] % 7 != 0) and (m[i+1] % 7 == 0))) and \
+#         ((m[i] + m[i+1]) % maxCrat16 == 0):
+#         c+=1
+#         maxSumm = max(maxSumm, m[i]+m[i+1])
+# print(c, maxSumm)
 
-maxCrat16 = -100000
-for x in m:
-    if hex(x)[-2:] == "0f":
-        maxCrat16 = max(maxCrat16, x)
-
-c = 0
-maxSumm = -10000
-for i in range(len(m)-1):
-    if (((m[i] % 7 == 0) and (m[i+1] % 7 != 0)) or ((m[i] % 7 != 0) and (m[i+1] % 7 == 0))) and \
-        ((m[i] + m[i+1]) % maxCrat16 == 0):
-        c+=1
-        maxSumm = max(maxSumm, m[i]+m[i+1])
-print(c, maxSumm)
-
-
-
-
-
+# with open("17.txt") as f:
+#     m = [int(x) for x in f]
+# allSumm = 0
+# for x in m:
+#     allSumm += sum(int(j) for j in str(x))
+# c = 0
+# xMin = 1000000000
+# for i in range(len(m)-1):
+#     if (((str(m[i])[-2:] == "10") and (str(m[i+1])[-2:] != "10")) or ((str(m[i])[-2:] != "10") and (str(m[i+1])[-2:] == "10"))) and \
+#             (allSumm > m[i]+m[i+1]):
+#         c += 1
+#         xMin = min(xMin, m[i+1] + m[i])
+# print(c, xMin)
 
 
 

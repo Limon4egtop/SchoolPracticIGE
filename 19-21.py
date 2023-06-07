@@ -569,7 +569,20 @@ for s in range(1, 125+1):
 #             if m == 2 or m == 4:
 #                 print(s, m)
 
-
+# 2 кучи +1 +3 *2 >=159 a=7 1<=s<=130
+# def f(a,s,c,m):
+#     if a+s >= 159:
+#         return c%2 == m%2
+#     if c == m:
+#         return 0
+#     h = [f(a+1,s,c+1,m), f(a+3,s,c+1,m), f(a*2,s,c+1,m), f(a,s+1,c+1,m), f(a,s+3,c+1,m), f(a,s*2,c+1,m)]
+#     return any(h) if (c+1)%2 == m%2 else all(h)
+#
+# for s in range(1, 131):
+#     for m in range(1,5):
+#         if f(7,s,0,m):
+#             if m == 2 or m == 4:
+#                 print(s,m)
 
 
 

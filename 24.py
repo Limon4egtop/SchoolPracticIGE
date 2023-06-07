@@ -305,14 +305,22 @@ print(max(len(x) for x in s))
 # print(max(len(x) for x in f))
 
 # 8959
-f = open("24_8959.txt").read().replace("EA", "**").replace("NPC", "***")
-for x in "QWERTYUIOPASDFGHJKLZXCVBNM":
-    f = f.replace(x, " ")
-f = f.split()
-print(max(len(y) for y in f))
+# f = open("24_8959.txt").read().replace("EA", "**").replace("NPC", "***")
+# for x in "QWERTYUIOPASDFGHJKLZXCVBNM":
+#     f = f.replace(x, " ")
+# f = f.split()
+# print(max(len(y) for y in f))
 
-
-
+# f = open("24.txt").read()
+# f = f.replace("B", "A").replace("C", "A")
+# while "AA" in f:
+#     f = f.replace("AA", "A A")
+# f = f.split()
+# c = 0
+# for x in f:
+#     if len(x) > 2:
+#         c += 1
+# print(c)
 
 
 
