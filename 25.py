@@ -182,14 +182,45 @@
 #         if i%11071 == 0:
 #             print(i, i//11071)
 
+# 67
+# def f(x):
+#     d = set()
+#     for i in range(2, int(x**0.5)+1):
+#         if x % i == 0:
+#             d.add(i)
+#             d.add(x//i)
+#     return sorted(d)
+# for i in range(81234, 134689+1):
+#     d = f(i)
+#     if len(d) == 3:
+#         print(*d)
 
+# 892
+# def f(x):
+#     d = set()
+#     for i in range(1, int(x**0.5)+1):
+#         if x%i == 0:
+#             d.add(i)
+#             d.add(x//i)
+#     return sorted(d)
+# for i in range(154026, 154043+1):
+#     d = f(i)
+#     if len(d) == 4:
+#         print(d[2], d[3])
 
-
-
-
-
-
-
+# 1388
+# def f(x):
+#     d = set()
+#     for i in range(2, int(x**0.5)+1):
+#         if x%i==0:
+#             d.add(i)
+#             d.add(x//i)
+#     return sorted(d)
+# for i in range(150_001, 150_200):
+#     d = f(i)
+#     s = sum(d)
+#     if s%13 == 10:
+#         print(i, s)
 
 
 

@@ -352,8 +352,19 @@ for i in range(1,100):
 #     if int(s,2) > 512:
 #         print(i)
 
-
-
+# ans = []
+# for i in range(1, 100):
+#     n = bin(i)[2:]
+#     if str(i)[-1] == "8":
+#         n = "100"+n[3:]
+#     elif str(i)[-1] == "9":
+#         n = n[:-3]+"110"
+#     else:
+#         c = 3 - len(bin(i%10)[2:])
+#         n = n[:-3] + "0"*c + bin(i % 10)[2:]
+#     if int(n,2) < 63:
+#         ans.append([int(n,2), i])
+#         print(i, int(n,2))
 
 
 

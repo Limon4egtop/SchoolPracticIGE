@@ -210,7 +210,16 @@ print(f(3516)//f(3513))
 #         return n**3 + f(n+2)
 # print(f(4)-f(10))
 
-
+# from sys import setrecursionlimit
+# setrecursionlimit(10000)
+# def f(n):
+#     if n >= 9026:
+#         return 2*n
+#     if n % 2 == 0:
+#         return f(n+3) + 2*n
+#     else:
+#         return f(n+2) + 2*n - 1
+# print(f(9019) - f(9022))
 
 
 

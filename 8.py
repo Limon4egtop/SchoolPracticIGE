@@ -485,7 +485,15 @@ for i in range(len(m)):
 #         c += 1
 # print(c-2)
 
-
+# import itertools
+# m = [''.join(x) for x in itertools.product("АБИНРСТУ", repeat=5)]
+# glas = ['А', "И", "У"]
+# sogl = ["Б", "Н", "Р", "С", "Т"]
+# for i in range(len(m)):
+#     s = m[i]
+#     if (s[0] == 'Н'):
+#         if s[1] in glas and s[2] in sogl and s[3] in glas and s[4] in sogl:
+#             print(i+1, m[i])
 
 
 

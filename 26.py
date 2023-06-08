@@ -78,23 +78,52 @@
 #             break
 # print(c, kLast+1)
 
+# -
+# f = open("26.txt")
+# k = int(f.readline())       #кол-во номеров
+# n = int(f.readline())       #кол-во групп
+# m = []
+# for _ in range(n):
+#     m.append(list(map(int, f.readline().split())))
+# print(k, n, m[:100])
+# m.sort()
+# m.sort(key=m[0][2])
+# print(k, n, m[:100])
+
+
 f = open("26.txt")
-k = int(f.readline())       #кол-во номеров
-n = int(f.readline())       #кол-во групп
-m = []
-for _ in range(n):
-    m.append(list(map(int, f.readline().split())))
-print(k, n, m[:100])
-m.sort()
-m.sort(key=m[0][2])
-print(k, n, m[:100])
+x = f.readline().split()
+k = int(x[0])       #кол-во ячеек
+n = int(x[1])       #кол-во туристов
 
+maxVesK = []
+for i in range(k):
+    maxVesK.append(int(f.readline()))
 
+turist = []
+for i in range(n):
+    dop = f.readline().split()
+    turist.append([int(dop[0]), int(dop[1]), int(dop[2])])
+turist.sort()
+# sorted(turist, key=lambda x: x[1])
 
+# k = 2
+# n = 5
+# maxVesK = [120, 190]
+# turist = [[30, 60, 100], [40, 1110, 160], [59, 60, 20], [61, 120, 135], [1230, 1440, 140]]
+# turist.sort()
 
-
-
-
+summPutVes = 0
+lastPutVes = 0
+kList = [-1]*k
+for i in range(n):
+    for j in range(k):
+        if kList[j] < turist[i][0] and maxVesK[j] >= turist[i][2]:
+            kList[j] = turist[i][1]
+            summPutVes += turist[i][2]
+            lastPutVes = turist[i][2]
+            break
+print(summPutVes, lastPutVes)
 
 
 

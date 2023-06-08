@@ -671,7 +671,17 @@ for A in range(1, 1000):
 #     if f == 1:
 #         print(a)
 
-
+# for a in range(1, 100):
+#     f = 1
+#     for x in range(1, 300):
+#         z = ((x % 5 == 0) <= (x % 7 != 0)) or (not(x+a <= 120))
+#         if z == 1:
+#             f = 1
+#         else:
+#             f = 0
+#             break
+#     if f:
+#         print(a)
 
 
 

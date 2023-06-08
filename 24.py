@@ -322,7 +322,21 @@ print(max(len(x) for x in s))
 #         c += 1
 # print(c)
 
-
+# f = open("24.txt").read()
+# for a in "QWERTYUIOPASDFGHJKLZXCVBNM":
+#     f = f.replace(a, f" {a} ")
+# f = f.split()
+# maxLen = -10000000
+# c = 0
+# fLast = ""
+# for i in range(len(f)):
+#     if fLast == f[i]:
+#         c += 1
+#     else:
+#         maxLen = max(maxLen, c)
+#         c = 0
+#         fLast = f[i]
+# print(maxLen)
 
 
 
