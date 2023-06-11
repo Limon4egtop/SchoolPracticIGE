@@ -423,6 +423,27 @@ for w in 0,1:
 #                 if f:
 #                     print(x,y,w,z)
 
+# print("x y w z")
+# for z in 0,1:
+#     for w in 0, 1:
+#         for y in 0, 1:
+#             for x in 0, 1:
+#                 f = x and (not(y)) and (not(z) or w)
+#                 if f:
+#                     print(x,y,w,z)
+
+print("x y w z")
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -749,23 +749,36 @@ print(minn, counter)
 #         xMin = min(xMin, m[i+1] + m[i])
 # print(c, xMin)
 
-with open("17.txt") as f:
-    m = [int(x) for x in f]
-minx4 = 10000000
-for x in m:
-    if len(str(x)) == 4 and x%7 == 0 and x > 0:
-        minx4 = min(minx4, x)
-c = 0
-xMin = 100000000000000000000
-for i in range(len(m)-1):
-    if (len(str(abs(m[i]))) + len(str(abs(m[i+1]))) == 6) and (str(m[i])[-1] == str(m[i+1])[-1]) and \
-           ((m[i]**2 + m[i+1]**2) > minx4**2):
-        c += 1
-        xMin = min(xMin, m[i]**2 + m[i+1]**2)
-print(c, xMin)
+# with open("17.txt") as f:
+#     m = [int(x) for x in f]
+# minx4 = 10000000
+# for x in m:
+#     if len(str(x)) == 4 and x%7 == 0 and x > 0:
+#         minx4 = min(minx4, x)
+# c = 0
+# xMin = 100000000000000000000
+# for i in range(len(m)-1):
+#     if (len(str(abs(m[i]))) + len(str(abs(m[i+1]))) == 6) and (str(m[i])[-1] == str(m[i+1])[-1]) and \
+#            ((m[i]**2 + m[i+1]**2) > minx4**2):
+#         c += 1
+#         xMin = min(xMin, m[i]**2 + m[i+1]**2)
+# print(c, xMin)
 
-
-
+# with open("17.txt") as f:
+#     m = [int(x) for x in f]
+# maxLen3 = -1
+# for x in m:
+#     if len(str(x)) == 3:
+#         maxLen3 = max(maxLen3, x)
+# c=0
+# xMin = 100000000000000000
+#
+# for i in range(len(m)-1):
+#     if ((len(str(m[i])) == 3 and len(str(m[i+1])) != 3) or (len(str(m[i])) != 3 and len(str(m[i+1])) == 3)) and \
+#             ((m[i] * m[i+1]) % maxLen3 == 0):
+#         c += 1
+#         xMin = min(m[i] * m[i+1], xMin)
+# print(c, xMin)
 
 
 

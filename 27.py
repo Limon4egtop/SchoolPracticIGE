@@ -172,6 +172,7 @@
 #         maxSumm = max(maxSumm, m[i] + m[j])
 # print(maxSumm)
 
+
 # f=open("27A.txt")
 # n = int(f.readline())       #кол-во чисел
 # k = int(f.readline())       #не более чем на
@@ -190,6 +191,36 @@
 #                 ans.append([m[i], m[j]])
 # print(len(ans), ans[:100])
 
+
+ans = []
+for i in range(2, 300):
+    f = 1
+    for j in range(2, 300):
+        if i%j == 0 and i != j:
+            f = 0
+            break
+    if f == 1:
+        ans.append(i)
+ans.sort(reverse=True)
+print(ans)
+import itertools
+f = open("27A.txt")
+n = int(f.readline())       # кол-во чисел в последовательности
+m = [int(x) for x in f.readlines()]
+n = 6
+m = [74321, 3333, 129, 1, 7776, 79]
+
+counter = 0
+for x, y in itertools.combinations(m , r=2):
+    if (x+y) % 1111 == 0:
+        dop = x*y
+        c = 0
+        for delitel in ans:
+            while dop % delitel == 0 and dop != delitel:
+                c += 1
+        if c > 10:
+            counter += 1
+print(counter)
 
 
 

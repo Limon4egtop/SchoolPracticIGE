@@ -223,7 +223,16 @@
 #         print(i, s)
 
 
-
+# for i in range(130005709, 130005709*100):
+#     if i % 999 == 0:
+#         print(i)
+#         break
+# import fnmatch
+# for i in range(130005864, 10**9, 999):
+#     s = str(i)
+#     if fnmatch.fnmatch(s, "13*57?9") and len(s) == 9 and s[1] == "3" and s[-4] == "5":
+#         if i % 999 == 0:
+#             print(i, i//999)
 
 
 

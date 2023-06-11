@@ -366,7 +366,14 @@ for i in range(1,100):
 #         ans.append([int(n,2), i])
 #         print(i, int(n,2))
 
-
+# for i in range(1,50):
+#     n = bin(i)[2:]
+#     if i % 5 == 0:
+#         n += n[-3:]
+#     else:
+#         n += bin(i%5*5)[2:]
+#     if int(n,2) > 256:
+#         print(i)
 
 
 

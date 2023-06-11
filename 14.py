@@ -372,8 +372,14 @@ for x in range(21):
 #     if str(v7ss).count("0") == 0:
 #         print(i, v7ss, z)
 
-
-
+# ans = []
+# for x in range(15):
+#     z = (9*15**7 + 7*15**6 + 9*15**5 + 6*15**4 + 8*15**3 + x*15**2 + 1*15**1 + 3*15**0) + \
+#     (7*15**4 + x*15**3 + 2*15**2 + 1*15**1 + 3*15**0)
+#     if z% 11==0:
+#         ans.append(x)
+#         print(x)
+# print("ans", sum(ans))
 
 
 

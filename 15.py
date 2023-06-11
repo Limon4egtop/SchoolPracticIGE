@@ -683,7 +683,20 @@ for A in range(1, 1000):
 #     if f:
 #         print(a)
 
-
+# for a in range(1, 4000):
+#     f = 1
+#     for x in range(1, 2000):
+#         for y in range(1, 2000):
+#             z = (x >= 11) or (3*x < y) or (x*y < a)
+#             if z:
+#                 f = 1
+#             else:
+#                 f = 0
+#                 break
+#         if f == 0:
+#             break
+#     if f == 1:
+#         print(a)
 
 
 

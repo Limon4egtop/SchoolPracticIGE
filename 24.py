@@ -338,8 +338,25 @@ print(max(len(x) for x in s))
 #         fLast = f[i]
 # print(maxLen)
 
-
-
+# f = open("24.txt").read()
+# for x in "1234567890":
+#     f = f.replace(x, f' {x} ')
+# f = f.split()
+# maxLenStr = -1
+# # dgvhbjn = ""
+# # iiii = 0
+# # print(f[:100])
+# for i in range(len(f)-2):
+#     if f[i] in "1234567890" and f[i+2] in "1234567890" and f[i+1] not in "1234567890":
+#         if int(f[i]) % 2 != int(f[i+2]) % 2:
+#             maxLenStr = max(maxLenStr, len(f[i+1]))
+#             # if len(f[i+1]) == 47:
+#             #     print(f[i], f[i+1], f[i+2])
+#     # if len(f[i]) > len(dgvhbjn):
+#     #     dgvhbjn = f[i]
+#     #     iiii = i
+# print(maxLenStr+2)
+# # print(len(dgvhbjn), iiii)
 
 
 

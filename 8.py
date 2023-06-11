@@ -495,7 +495,11 @@ for i in range(len(m)):
 #         if s[1] in glas and s[2] in sogl and s[3] in glas and s[4] in sogl:
 #             print(i+1, m[i])
 
-
+import itertools
+m = ["".join(x) for x in itertools.product("АЕКНС", repeat=6)]
+for i in range(len(m)):
+    if m[i] == "СЕНЕКА":
+        print(i+1)
 
 
 
