@@ -359,8 +359,11 @@ print(max(len(x) for x in s))
 # # print(len(dgvhbjn), iiii)
 
 
-
-
+f = open("24.txt").read().replace("B", "A").replace("C","A").replace("D","A")
+while "AAA" in f:
+    f = f.replace("AAA", "A AA")
+f = f.split()
+print(max(len(x) for x in f))
 
 
 

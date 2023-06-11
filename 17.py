@@ -780,10 +780,20 @@ print(minn, counter)
 #         xMin = min(m[i] * m[i+1], xMin)
 # print(c, xMin)
 
-
-
-
-
+with open("17.txt") as f:
+    m = [int(x) for x in f]
+dvizMin = 100000000
+for x in m:
+    if len(str(abs(x))) == 2 and str(x)[-1] == "1":
+        dvizMin = min(x, dvizMin)
+c = 0
+xMin = 1000000
+for i in range(len(m)-1):
+    if ((m[i]**2 < dvizMin**2) and (m[i+1]**2 >= dvizMin**2)) or \
+            ((m[i]**2 >= dvizMin**2) and (m[i+1]**2 < dvizMin**2)):
+        c += 1
+        xMin = min(xMin, m[i]+m[i+1])
+print(c, xMin)
 
 
 

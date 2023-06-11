@@ -235,7 +235,17 @@
 #             print(i, i//999)
 
 
+import fnmatch
+for i in range(11287139, 11287139*100):
+    if i % 183 == 0:
+        print(i)
+        break
 
+for i in range(11287257, 10**9, 183):
+    s = str(i)
+    if fnmatch.fnmatch(s, "??287*139"):
+        if i % 183 == 0:
+            print(i, i//183)
 
 
 

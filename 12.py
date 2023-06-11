@@ -423,6 +423,62 @@ print(s)
 #     if sum(int(g) for g in s) % 22 == 0:
 #         print(n)
 
+# for n in range(1, 100):
+#     s = "13"*n
+#     while "13" in s or "31" in s or "11" in s:
+#         if "13" in s:
+#             s = s.replace("13", "4", 1)
+#         if "31" in s:
+#             s = s.replace("31", "1", 1)
+#         if "11" in s:
+#             s = s.replace("11", "2", 1)
+#         if "44" in s:
+#             s = s.replace("44", "1", 1)
+#     intSumm = sum(int(h) for h in s)
+#     if len(str(intSumm)) == 2:
+#         print(intSumm, n)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

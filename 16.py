@@ -231,9 +231,20 @@ print(f(3516)//f(3513))
 # print(f(2222)/f(2182))
 
 
-
-
-
+def f(n):
+    if n <= 1:
+        return n
+    if n > 1:
+        if n % 3 == 0:
+            return f(n-1) + f(n-2) + 1
+        if n % 3 != 0:
+            return g(n-3)
+def g(n):
+    if n > 100:
+        return n
+    if n <= 100:
+        return g(n+2) + 1
+print(f(15) + f(12))
 
 
 
