@@ -780,25 +780,36 @@ print(minn, counter)
 #         xMin = min(m[i] * m[i+1], xMin)
 # print(c, xMin)
 
-with open("17.txt") as f:
-    m = [int(x) for x in f]
-dvizMin = 100000000
-for x in m:
-    if len(str(abs(x))) == 2 and str(x)[-1] == "1":
-        dvizMin = min(x, dvizMin)
-c = 0
-xMin = 1000000
-for i in range(len(m)-1):
-    if ((m[i]**2 < dvizMin**2) and (m[i+1]**2 >= dvizMin**2)) or \
-            ((m[i]**2 >= dvizMin**2) and (m[i+1]**2 < dvizMin**2)):
-        c += 1
-        xMin = min(xMin, m[i]+m[i+1])
-print(c, xMin)
+# with open("17.txt") as f:
+#     m = [int(x) for x in f]
+# dvizMin = 100000000
+# for x in m:
+#     if len(str(abs(x))) == 2 and str(x)[-1] == "1":
+#         dvizMin = min(x, dvizMin)
+# c = 0
+# xMin = 1000000
+# for i in range(len(m)-1):
+#     if ((m[i]**2 < dvizMin**2) and (m[i+1]**2 >= dvizMin**2)) or \
+#             ((m[i]**2 >= dvizMin**2) and (m[i+1]**2 < dvizMin**2)):
+#         c += 1
+#         xMin = min(xMin, m[i]+m[i+1])
+# print(c, xMin)
+#
 
-
-
-
-
+# 9372
+# with open("17_9372.txt") as f:
+#     m = [int(x) for x in f]
+# xCratMax = -10000
+# for x in m:
+#     if abs(x) % 1001 == 0:
+#         xCratMax = max(xCratMax, x)
+# c = 0
+# xMin = 10000000
+# for i in range(len(m)-1):
+#     if (len(str(abs(m[i]))) == 3 or len(str(abs(m[i+1]))) == 3) and ((m[i] + m[i+1]) > xCratMax):
+#         c += 1
+#         xMin = min(xMin, m[i]+m[i+1])
+# print(c, xMin)
 
 
 

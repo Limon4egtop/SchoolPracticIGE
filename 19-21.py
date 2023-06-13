@@ -631,8 +631,20 @@ for s in range(1, 125+1):
 #             if m == 2 or m == 4:
 #                 print(s,m)
 
-
-
+# 9374 2 кучи a=3 1<=s<=40 +2 *2 a*b>=123
+# def f(a,s,c,m):
+#     if a*s >= 123:
+#         return c%2 == m%2
+#     if c == m:
+#         return 0
+#     h = [f(a+2,s,c+1,m), f(a*2,s,c+1,m), f(a,s+2,c+1,m), f(a,s*2,c+1,m)]
+#     return any(h) if (c+1)%2 == m%2 else all(h)
+#
+# for s in range(1, 41):
+#     for m in range(1,5):
+#         if f(3,s,0,m):
+#             if m == 2 or m == 4:
+#                 print(s,m)
 
 
 

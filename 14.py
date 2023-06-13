@@ -381,17 +381,24 @@ for x in range(21):
 #         print(x)
 # print("ans", sum(ans))
 
-for k in range(4):
-    ss4 = (1*4**6 + 3*4**5 + k*4**4 + k*4**3 + 2*4**2 + 2*4**1 + k*4**0)
-    for l in range(8):
-        ss8 = (1*8**4 + l*8**3 + l*8**2 + 5*8**1 + 0*8**0)
-        for d in range(16):
-            ss16 = (d*16**3 + 12*16**2 + 2*16**1 +  8*16**0)
-            if ss16 == ss8 == ss4:
-                print(ss16)
+# for k in range(4):
+#     ss4 = (1*4**6 + 3*4**5 + k*4**4 + k*4**3 + 2*4**2 + 2*4**1 + k*4**0)
+#     for l in range(8):
+#         ss8 = (1*8**4 + l*8**3 + l*8**2 + 5*8**1 + 0*8**0)
+#         for d in range(16):
+#             ss16 = (d*16**3 + 12*16**2 + 2*16**1 +  8*16**0)
+#             if ss16 == ss8 == ss4:
+#                 print(ss16)
 
-
-
+# 9369
+ans = []
+for x in "0123456789ABCDEF":
+    xxx = int(f'27A{x}23', 16)
+    for y in "0123456789ABCDEF":
+        yyy = int(f'8{y}E5D2', 16)
+        if (xxx + yyy) % 5 == 0:
+            ans.append(int(x, 16) + int(y,16))
+print(max(ans))
 
 
 

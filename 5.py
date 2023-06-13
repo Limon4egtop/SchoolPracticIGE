@@ -375,18 +375,24 @@ for i in range(1,100):
 #     if int(n,2) > 256:
 #         print(i)
 
-for i in range(1,1100):
-    n = bin(i)[2:]
-    if i % 3 == 0:
-        n = "10" + n[2:] + "1"
-    else:
-        n = bin(i%3*2)[2:] + n
-    if int(n,2) > 8000:
-        print(i, int(n,2))
+# for i in range(1,1100):
+#     n = bin(i)[2:]
+#     if i % 3 == 0:
+#         n = "10" + n[2:] + "1"
+#     else:
+#         n = bin(i%3*2)[2:] + n
+#     if int(n,2) > 8000:
+#         print(i, int(n,2))
 
-
-
-
+# 9360
+# for i in range(1, 100):
+#     n = bin(i)[2:]
+#     if i % 3 == 0:
+#         n += "010"
+#     else:
+#         n += bin(i%3*5)[2:]
+#     if int(n,2) % 2 == 0 and int(n,2) > 300:
+#         print(i)
 
 
 
