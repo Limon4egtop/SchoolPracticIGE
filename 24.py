@@ -366,18 +366,18 @@ print(max(len(x) for x in s))
 # print(max(len(x) for x in f))
 
 
-f = open("24.txt").read()
-
-maxLen = -1000
-startI = -1000
-stopI=0
-for i in range(len(f)-4):
-    if f[i+1] == "B" and f[i+4] == "D" and stopI < startI:
-        startI = i+1
-    if f[i + 1] == "B" and f[i + 4] == "D" and stopI > startI:
-        stopI = i+4
-        maxLen = max(maxLen, stopI-startI)
-print(maxLen)
+# f = open("24.txt").read()
+#
+# maxLen = -1000
+# startI = -1000
+# stopI=0
+# for i in range(len(f)-4):
+#     if f[i+1] == "B" and f[i+4] == "D" and stopI < startI:
+#         startI = i+1
+#     if f[i + 1] == "B" and f[i + 4] == "D" and stopI > startI:
+#         stopI = i+4
+#         maxLen = max(maxLen, stopI-startI)
+# print(maxLen)
 
 
 
