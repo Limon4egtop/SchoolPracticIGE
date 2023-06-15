@@ -442,16 +442,24 @@ for w in 0,1:
 #                     print(a,b,c,t)
 
 # 9357
-print("x y w z")
-for x in 0,1:
-    for y in 0, 1:
-        for w in 0, 1:
-            for z in 0, 1:
-                f1 = (x <= y) or ((not(w)) == z) and (x <= y) == (w and(not(z)))
-                if f1 == 0:
-                    print(x,y,w,z)
+# print("x y w z")
+# for x in 0,1:
+#     for y in 0, 1:
+#         for w in 0, 1:
+#             for z in 0, 1:
+#                 f1 = (x <= y) or ((not(w)) == z) and (x <= y) == (w and(not(z)))
+#                 if f1 == 0:
+#                     print(x,y,w,z)
 
 
+# print("x y w z")
+# for x in 0,1:
+#     for y in 0, 1:
+#         for w in 0, 1:
+#             for z in 0, 1:
+#                 f = (x or (not(y))) and z and (not(w))
+#                 if f == 1:
+#                      print(x,y,w,z)
 
 
 

@@ -698,25 +698,35 @@ for A in range(1, 1000):
 #     if f == 1:
 #         print(a)
 
-for a in range(1, 100):
-    f=1
-    for x in range(1, 300):
-        for y in range(1, 300):
-            for z in range(1, 300):
-                l = (2*x + y != 136) or (z*y < 100) or (a**2 >= x+y)
-                if l:
-                    f = 1
-                else:
-                    f = 0
-                    break
-            if f == 0:
-                break
-        if f == 0:
+# for a in range(1, 100):
+#     f=1
+#     for x in range(1, 300):
+#         for y in range(1, 300):
+#             for z in range(1, 300):
+#                 l = (2*x + y != 136) or (z*y < 100) or (a**2 >= x+y)
+#                 if l:
+#                     f = 1
+#                 else:
+#                     f = 0
+#                     break
+#             if f == 0:
+#                 break
+#         if f == 0:
+#             break
+#     if f:
+#         print(a)
+
+for a in range(1, 1000):
+    f = 1
+    for x in range(1, 500):
+        z = (x%17 == 0) <= ((not(80 <= x <= 100)) or (a < x+30))
+        if z == 1:
+            f = 1
+        else:
+            f = 0
             break
-    if f:
+    if f == 1:
         print(a)
-
-
 
 
 

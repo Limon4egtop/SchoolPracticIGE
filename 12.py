@@ -452,9 +452,17 @@ print(s)
 #         print(n)
 
 
-
-
-
+# c=0
+# for p in range(1000, 2001):
+#     s = "7" + "8"*p
+#     while "78" in s or "888" in s:
+#         if "78" in s:
+#             s = s.replace("78", "8", 1)
+#         if "888" in s:
+#             s = s.replace("888", "7", 1)
+#     if sum(int(x) for x in s) == 16:
+#         c+=1
+# print(c)
 
 
 

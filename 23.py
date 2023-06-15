@@ -673,9 +673,15 @@ print(f(1,600))
 # print(f(6, 25, 0))
 
 
+def f(n,k):
+    if n < k:
+        return 0
+    if n == k:
+        return 1
+    if n > k:
+        return f(n-2,k) + f(n//3,k)
 
-
-
+print(f(200,6)*f(6,2))
 
 
 

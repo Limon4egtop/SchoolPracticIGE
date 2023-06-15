@@ -391,16 +391,19 @@ for x in range(21):
 #                 print(ss16)
 
 # 9369
-ans = []
-for x in "0123456789ABCDEF":
-    xxx = int(f'27A{x}23', 16)
-    for y in "0123456789ABCDEF":
-        yyy = int(f'8{y}E5D2', 16)
-        if (xxx + yyy) % 5 == 0:
-            ans.append(int(x, 16) + int(y,16))
-print(max(ans))
+# ans = []
+# for x in "0123456789ABCDEF":
+#     xxx = int(f'27A{x}23', 16)
+#     for y in "0123456789ABCDEF":
+#         yyy = int(f'8{y}E5D2', 16)
+#         if (xxx + yyy) % 5 == 0:
+#             ans.append(int(x, 16) + int(y,16))
+# print(max(ans))
 
-
+# for x in "0123456789ABCDE":
+#     z = int(f"1F3B{x}75", 16) + int(f"5D{x}3B", 16)
+#     if z % 11 == 0:
+#         print(z//11, x)
 
 
 

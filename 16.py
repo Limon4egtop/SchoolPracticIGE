@@ -263,9 +263,15 @@ print(f(3516)//f(3513))
 # print(f(15)- g(3000))
 
 
-
-
-
+# from sys import setrecursionlimit
+# setrecursionlimit(10000)
+# def h(x):
+#     if x >= 4040:
+#         return x
+#     else:
+#         return x + 4 + h(x + 4)
+#
+# print(h(3)-h(15))
 
 
 

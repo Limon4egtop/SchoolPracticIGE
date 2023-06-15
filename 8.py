@@ -511,21 +511,25 @@ for i in range(len(m)):
 #         print(i-firtM-1)
 
 # 9363
-import itertools
-m = [''.join(x) for x in itertools.permutations("ХОЧУНАБЮДЖЕТ")]
-print(m[:100])
-c = 0
-glas = "ОУАЮЕ"
-for i in range(len(m)):
-    dop = m[i]
-    for gl in glas:
-        dop = dop.replace(gl, "О")
-    if "ООООО" not in dop:
-        c += 1
-print(c, len(m))
+# import itertools
+# m = [''.join(x) for x in itertools.permutations("ХОЧУНАБЮДЖЕТ")]
+# print(m[:100])
+# c = 0
+# glas = "ОУАЮЕ"
+# for i in range(len(m)):
+#     dop = m[i]
+#     for gl in glas:
+#         dop = dop.replace(gl, "О")
+#     if "ООООО" not in dop:
+#         c += 1
+# print(c, len(m))
 
 
-
+# import itertools
+# m = [''.join(x) for x in itertools.product("АКМСУ", repeat=5)]
+# for i in range(len(m)):
+#     if m[i] == "КУМАС":
+#         print(i+1)
 
 
 

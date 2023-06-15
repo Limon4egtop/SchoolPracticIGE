@@ -812,7 +812,20 @@ print(minn, counter)
 # print(c, xMin)
 
 
-
+with open("17.txt") as f:
+    m = [int(x) for x in f]
+xMax3Ceat = -10000
+for x in m:
+    if len(str(abs(x))) == 3 and x > 0:
+        xMax3Ceat = max(xMax3Ceat, x)
+c = 0
+xMaxSumm = -1
+for i in range(len(m)-1):
+    if ((len(str(m[i])) == 3  and len(str(m[i+1])) != 3) or (len(str(m[i])) != 3  and len(str(m[i+1])) == 3)) and \
+            ((m[i] + m[i+1]) % xMax3Ceat == 0):
+        c += 1
+        xMaxSumm = max(xMaxSumm, m[i]+m[i+1])
+print(c, xMaxSumm)
 
 
 

@@ -395,9 +395,16 @@ for i in range(1,100):
 #         print(i)
 
 
-
-
-
+# c = 0
+# for i in range(1, 5000):
+#     n = oct(i)[2:]
+#     if i % 7 == 0:
+#         n += n[-2:]
+#     else:
+#         n += oct(i%7*7)[2:]
+#     if int(n,8) < 3000:
+#         c += 1
+# print(c)
 
 
 

@@ -248,17 +248,16 @@
 #             print(i, i//183)
 
 # 9378
-for i in range(123045679, 123045679*100):
-    if i % 4013 == 0:
-        print(i)
-        break
-import fnmatch
-for i in range(123046606, 10**12, 4013):
-    s = str(i)
-    if fnmatch.fnmatch(s, "123?4*5679"):
-        if i % 4013 == 0:
-            print(i, i//4013)
-
+# for i in range(123045679, 123045679*100):
+#     if i % 4013 == 0:
+#         print(i)
+#         break
+# import fnmatch
+# for i in range(123046606, 10**12, 4013):
+#     s = str(i)
+#     if fnmatch.fnmatch(s, "123?4*5679"):
+#         if i % 4013 == 0:
+#             print(i, i//4013)
 
 
 
