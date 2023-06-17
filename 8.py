@@ -531,8 +531,11 @@ for i in range(len(m)):
 #     if m[i] == "КУМАС":
 #         print(i+1)
 
-
-
+# import itertools
+# m = ["".join(x) for x in itertools.product("ЭКЗАМЕН", repeat=8)
+#      if abs((x.count("Э") + x.count("А") + x.count("Е")) -
+#              (x.count("К") + x.count("З") + x.count("М") + x.count("Н"))) == 2 and x[3] != x[4]]
+# print(len(m), m[:100])
 
 
 

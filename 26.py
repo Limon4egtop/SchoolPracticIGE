@@ -126,60 +126,85 @@
 # print(summPutVes, lastPutVes)
 
 
-f = open("26.txt")
-n = int(f.readline())       #кол-во клиентов
-k = int(f.readline())       #кол-во мест
-c = int(f.readline())       #стоимость парковки на 1 уровне
-m = []
-for i in range(n):
-    x = f.readline().split()
-    m.append([int(x[0]), int(x[1]), int(x[2])])
-
-# n = 6
-# k = 1
-# c = 10
-# m = [[10, 3600, 1], [1500, 3600, 2], [3650, 7100, 1], [8100, 8200, 3], [3660, 9000, 2], [4000, 5000, 1]]
-
-m.sort()
-count = 0
-doxodSumm = 0
-
-level1 = [-1]*k
-level2 = [-1]*k
-level3 = [-1]*k
-
-for i in range(n):
-    if m[i][2] == 1:
-        for j in range(k):
-            if level1[j] < m[i][0]:
-                level1[j] = m[i][1]
-                doxodSumm += c
-                count += 1
-                # print(i+1)
-                break
-    if m[i][2] == 2:
-        for j in range(k):
-            if level2[j] < m[i][0]:
-                level2[j] = m[i][1]
-                doxodSumm += c*2
-                count += 1
-                # print(i+1)
-                break
-    if m[i][2] == 3:
-        for j in range(k):
-            if level3[j] < m[i][0]:
-                level3[j] = m[i][1]
-                doxodSumm += c*4
-                count += 1
-                # print(i+1)
-                break
-print(doxodSumm, count)
-
-
+# f = open("26.txt")
+# n = int(f.readline())       #кол-во клиентов
+# k = int(f.readline())       #кол-во мест
+# c = int(f.readline())       #стоимость парковки на 1 уровне
+# m = []
+# for i in range(n):
+#     x = f.readline().split()
+#     m.append([int(x[0]), int(x[1]), int(x[2])])
+#
+# # n = 6
+# # k = 1
+# # c = 10
+# # m = [[10, 3600, 1], [1500, 3600, 2], [3650, 7100, 1], [8100, 8200, 3], [3660, 9000, 2], [4000, 5000, 1]]
+#
+# m.sort()
+# count = 0
+# doxodSumm = 0
+#
+# level1 = [-1]*k
+# level2 = [-1]*k
+# level3 = [-1]*k
+#
+# for i in range(n):
+#     if m[i][2] == 1:
+#         for j in range(k):
+#             if level1[j] < m[i][0]:
+#                 level1[j] = m[i][1]
+#                 doxodSumm += c
+#                 count += 1
+#                 # print(i+1)
+#                 break
+#     if m[i][2] == 2:
+#         for j in range(k):
+#             if level2[j] < m[i][0]:
+#                 level2[j] = m[i][1]
+#                 doxodSumm += c*2
+#                 count += 1
+#                 # print(i+1)
+#                 break
+#     if m[i][2] == 3:
+#         for j in range(k):
+#             if level3[j] < m[i][0]:
+#                 level3[j] = m[i][1]
+#                 doxodSumm += c*4
+#                 count += 1
+#                 # print(i+1)
+#                 break
+# print(doxodSumm, count)
 
 
 
-
+# f = open("26-bag.txt")
+# k = int(f.readline())       #кол-во ячеек
+# n = int(f.readline())       #кол-во туристов
+# turist = []
+# for i in range(n):
+#     strrr = f.readline().split()
+#     turist.append([int(strrr[0]), int(strrr[1]), int(strrr[2])])
+#
+# # k = 2
+# # n = 6
+# # turist = [[30, 60, 30], [20,80, 70], [52, 100, 45], [61, 100, 10], [82, 95, 14], [83, 120, 90]]
+#
+# turist.sort()
+# camera = [-1]*k
+# lastCamera = countTurist = 0
+# for i in range(n):
+#     for j in range(k):
+#         if turist[i][0] > camera[j] and turist[i][2] < 50:
+#             camera[j] = turist[i][1]
+#             countTurist += 1
+#             lastCamera = j+1
+#             break
+#         if turist[i][0] > camera[j] and turist[i][2] >= 50:
+#             camera[j] = turist[i][1] + 2
+#             countTurist += 1
+#             lastCamera = j+1
+#             break
+# print(countTurist, lastCamera)
 
 
 

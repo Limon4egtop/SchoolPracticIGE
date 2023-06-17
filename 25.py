@@ -260,8 +260,17 @@
 #             print(i, i//4013)
 
 
+for i in range(38560, 10**8):
+    if i % 768 == 0 and i % 10 != 0:
+        print(i)
+        break
 
-
+import fnmatch
+for i in range(39168, 10**8, 768):
+    s = str(i)
+    if fnmatch.fnmatch(s, "38*56?") and (not(fnmatch.fnmatch(s, "38*2*56"))):
+        if i % 768 == 0 and i % 10 != 0:
+            print(i, i//768)
 
 
 

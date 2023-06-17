@@ -464,8 +464,15 @@ print(s)
 #         c+=1
 # print(c)
 
-
-
+# for i in range(1, 101):
+#     s = "3" + i*"2"
+#     while "222" in s or "31" in s:
+#         if "222" in s:
+#             s = s.replace("222", "11", 1)
+#         if "31" in s:
+#             s = s.replace("31", "523", 1)
+#     if sum(int(x) for x in s) % 15 == 0 and len(s) % 2 == 0:
+#         print(i)
 
 
 

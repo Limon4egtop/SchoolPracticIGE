@@ -406,8 +406,15 @@ for i in range(1,100):
 #         c += 1
 # print(c)
 
-
-
+# for i in range(1,460):
+#     n = bin(i)[2:]
+#     if n.count("0") % 2 == 0:
+#         n += n[-2:]
+#     else:
+#         n = "1" + n + n[-1]
+#     n += bin(i%2)[2:]
+#     if int(n,2)  < 485:
+#         print(i, int(n,2))
 
 
 

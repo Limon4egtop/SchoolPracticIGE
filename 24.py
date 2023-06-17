@@ -380,10 +380,17 @@ print(max(len(x) for x in s))
 # print(maxLen)
 
 
-
-
-
-
+# f = open("24-colors.txt").read()
+# ans = []
+# f = f.replace("g", " g ").split()
+# print(f)
+# for i in range(len(f)-3):
+#     if f[i] == 'g' and f[i+2] == 'g':
+#         if f[i+1].count("r") == len(f[i+1]) or f[i+1].count("b") == len(f[i+1]):
+#             ans.append(len(f[i+1])+2)
+#         if len(f[i+1])+2 == 500:
+#             print(f[i:i+3])
+# print(max(ans))
 
 
 

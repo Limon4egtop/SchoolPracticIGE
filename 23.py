@@ -673,15 +673,46 @@ print(f(1,600))
 # print(f(6, 25, 0))
 
 
-def f(n,k):
-    if n < k:
-        return 0
-    if n == k:
-        return 1
-    if n > k:
-        return f(n-2,k) + f(n//3,k)
+# def f(n,k):
+#     if n < k:
+#         return 0
+#     if n == k:
+#         return 1
+#     if n > k:
+#         return f(n-2,k) + f(n//3,k)
+#
+# print(f(200,6)*f(6,2))
 
-print(f(200,6)*f(6,2))
+# def up(n,k):
+#     if n > k:
+#         return 0
+#     if n == k:
+#         return 1
+#     if n == 15 or n == 85:
+#         return 0
+#     if n < k:
+#         return up(n+1,k) + up(n*2,k)
+#
+# def down(n,k):
+#     if n < k:
+#         return 0
+#     if n == k:
+#         return 1
+#     if n == 15 or n == 85:
+#         return 0
+#     if n > k:
+#         return down(n-1,k) + down(n//2,k)
+#
+# print(up(1, 50)*up(50,100), down(100, 50)*down(50,1))
+
+
+
+
+
+
+
+
+
 
 
 

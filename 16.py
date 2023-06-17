@@ -274,6 +274,17 @@ print(f(3516)//f(3513))
 # print(h(3)-h(15))
 
 
+# from sys import setrecursionlimit
+# setrecursionlimit(10000)
+# def f(x):
+#     if x <= 1:
+#         return 1
+#     if x % 4 == 0:
+#         return f(x//2) + f(x//4) + x//4
+#     if x % 2 == 0 and x % 4 != 0:
+#         return f(x//2) + x//2
+#     return f(x-1) + f(x-4)
+# print(f(10000))
 
 
 
