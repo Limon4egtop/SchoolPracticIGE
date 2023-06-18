@@ -286,8 +286,13 @@ print(f(3516)//f(3513))
 #     return f(x-1) + f(x-4)
 # print(f(10000))
 
-
-
+# 9546
+# def f(n):
+#     if n >= 2222:
+#         return n
+#     else:
+#         return f(n+5) + 7
+# print(f(45)-f(49))
 
 
 

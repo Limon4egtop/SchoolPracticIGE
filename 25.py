@@ -260,20 +260,37 @@
 #             print(i, i//4013)
 
 
-for i in range(38560, 10**8):
-    if i % 768 == 0 and i % 10 != 0:
-        print(i)
-        break
+# for i in range(38560, 10**8):
+#     if i % 768 == 0 and i % 10 != 0:
+#         print(i)
+#         break
+#
+# import fnmatch
+# for i in range(39168, 10**8, 768):
+#     s = str(i)
+#     if fnmatch.fnmatch(s, "38*56?") and (not(fnmatch.fnmatch(s, "38*2*56"))):
+#         if i % 768 == 0 and i % 10 != 0:
+#             print(i, i//768)
 
-import fnmatch
-for i in range(39168, 10**8, 768):
-    s = str(i)
-    if fnmatch.fnmatch(s, "38*56?") and (not(fnmatch.fnmatch(s, "38*2*56"))):
-        if i % 768 == 0 and i % 10 != 0:
-            print(i, i//768)
-
-
-
+# 9553
+# for i in range(2468335, 2468335*100):
+#     if i % 13 == 0:
+#         print(i)
+#         break
+#
+# import fnmatch
+# for i in range(2468336, 10**9, 13):
+#     s = str(i)
+#     if fnmatch.fnmatch(s, "24*68?35") and int(s[-3]) % 2 != 0 and int(s[-3]) % 3 == 0:
+#         f = 1
+#         if len(s) != 7:
+#             zv = s[2:-5]
+#             for h in zv:
+#                 if int(h) % 2 != 0:
+#                     f = 0
+#                     break
+#         if f == 1 and i % 13 == 0:
+#             print(i, i//13)
 
 
 

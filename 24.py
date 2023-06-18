@@ -392,8 +392,12 @@ print(max(len(x) for x in s))
 #             print(f[i:i+3])
 # print(max(ans))
 
-
-
+# 9552
+f = open("24_9552.txt").read().replace("C", " C ").replace("P C SGO", "**").replace("P C", "*").replace("C SGO", "*")
+for y in "QWERTYUIOPASDFGHJKLZXCVBNM":
+    f = f.replace(y, " ")
+f = f.split()
+print(max(len(x) for x in f))
 
 
 

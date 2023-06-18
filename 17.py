@@ -828,26 +828,39 @@ print(minn, counter)
 # print(c, xMaxSumm)
 
 
-with open("17.txt") as f:
-    m = [int(x) for x in f]
-countPolindrom = 0
-for x in m:
-    xxx = abs(x)
-    f = 1
-    for i in range(len(str(xxx))):
-        if str(xxx)[i] == str(xxx)[i+1*-1]:
-            f = 1
-        elif i == i*-1:
-            f = 1
-        else:
-            f = 0
-            break
-    if f == 1 and len(str(xxx)) == 3:
-        print(xxx)
+# with open("17.txt") as f:
+#     m = [int(x) for x in f]
+# countPolindrom = 0
+# for x in m:
+#     xxx = abs(x)
+#     f = 1
+#     for i in range(len(str(xxx))):
+#         if str(xxx)[i] == str(xxx)[i+1*-1]:
+#             f = 1
+#         elif i == i*-1:
+#             f = 1
+#         else:
+#             f = 0
+#             break
+#     if f == 1 and len(str(xxx)) == 3:
+#         print(xxx)
 
-
-
-
+# 9547
+# with open("17_9547.txt") as f:
+#     m = [int(x) for x in f]
+# min3ZnKrat11 = 1000000
+# for x in m:
+#     if len(str(x)) == 3:
+#         if str(x)[-2:] == "11":
+#             min3ZnKrat11 = min(min3ZnKrat11, x)
+# c = 0
+# xMax = -1000
+# for i in range(len(m)-1):
+#     if ((len(str(m[i])) == 3 and len(str(m[i+1])) != 3) or (len(str(m[i])) != 3 and len(str(m[i+1])) == 3)) and \
+#             (abs(m[i] - m[i+1]) % min3ZnKrat11 == 0):
+#         c += 1
+#         xMax = max(xMax, m[i] + m[i+1])
+# print(c, xMax)
 
 
 

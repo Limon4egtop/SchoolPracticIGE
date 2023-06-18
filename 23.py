@@ -705,8 +705,14 @@ print(f(1,600))
 #
 # print(up(1, 50)*up(50,100), down(100, 50)*down(50,1))
 
-
-
+# def f(n,k):
+#     if n > k:
+#         return 0
+#     if n == k:
+#         return 1
+#     if n < k:
+#         return f(n+3,k) + f(n*2,k)
+# print(f(3, 30) * f(30, 105))
 
 
 

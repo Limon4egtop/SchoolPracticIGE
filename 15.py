@@ -728,18 +728,28 @@ for A in range(1, 1000):
 #     if f == 1:
 #         print(a)
 
-def f(a1, a2, x):
-    return (200 <= x <= 610) <= (((not(320 <= x <= 830)) and (not(a1 <= x <= a2))) <= (not(200 <= x <= 610)))
+# def f(a1, a2, x):
+#     return (200 <= x <= 610) <= (((not(320 <= x <= 830)) and (not(a1 <= x <= a2))) <= (not(200 <= x <= 610)))
+#
+# ans = []
+# for a1 in range(10, 4000):
+#     for a2 in range(a1+1, 4010):
+#         if all(f(a1, a2, x) for x in range(10, 4010)):
+#             ans.append(a2-a1)
+# print(min(ans))
 
-ans = []
-for a1 in range(10, 4000):
-    for a2 in range(a1+1, 4010):
-        if all(f(a1, a2, x) for x in range(10, 4010)):
-            ans.append(a2-a1)
-print(min(ans))
-
-
-
+# 9545
+# for a in range(1, 1000):
+#     f = 1
+#     for x in range(1, 400):
+#         z = (x % 10 == 0) and (x % 26 == 0) and (x >= 300) <= (a <= x)
+#         if z == 1:
+#             f = 1
+#         else:
+#             f = 0
+#             break
+#     if f == 1:
+#         print(a)
 
 
 

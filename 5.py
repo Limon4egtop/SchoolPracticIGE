@@ -416,9 +416,19 @@ for i in range(1,100):
 #     if int(n,2)  < 485:
 #         print(i, int(n,2))
 
-
-
-
+# 9535
+for i in range(1, 1109):
+    n = bin(i)[2:]
+    if i % 2 == 0:
+        n += "0"
+    else:
+        n += "1"
+    if bin(i)[2:].count("1") % 2 == 0:
+        n += "0"
+    else:
+        n += "1"
+    if int(n,2) > 2023:
+        print(n, int(n,2))
 
 
 

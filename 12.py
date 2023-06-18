@@ -474,8 +474,18 @@ print(s)
 #     if sum(int(x) for x in s) % 15 == 0 and len(s) % 2 == 0:
 #         print(i)
 
-
-
+# 9542
+# for n in range(101, 150):
+#     s = n*"5"
+#     while "555" in s or "11" in s or "2" in s:
+#         if "555" in s:
+#             s = s.replace("555", "1", 1)
+#         if "11" in s:
+#             s = s.replace("11", "25", 1)
+#         if "2" in s:
+#             s = s.replace("2", "5", 1)
+#     if s == "15":
+#         print(n)
 
 
 
